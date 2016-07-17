@@ -1,0 +1,94 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.18.0.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: bai 白帅, 1, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.18
+Toolchain Path:  d:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 1 (build 61)
+Assembler:       Armasm.exe V5.06 update 1 (build 61)
+Linker/Locator:  ArmLink.exe V5.06 update 1 (build 61)
+Library Manager: ArmAr.exe V5.06 update 1 (build 61)
+Hex Converter:   FromElf.exe V5.06 update 1 (build 61)
+CPU DLL:         SARMCM3.DLL V5.18
+Dialog DLL:      DCM.DLL V1.13.6.0
+Target DLL:      Segger\JL2CM3.dll V2.99.18.0
+Dialog DLL:      TCM.DLL V1.14.8.0
+ 
+<h2>Project:</h2>
+D:\开发\MPU6050(硬件IIC)\USER\I2C_MPU6050.uvprojx
+Project File Date:  07/11/2016
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 1 (build 61)', folder: 'd:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+compiling stm32f10x_it.c...
+compiling I2C_MPU6050.c...
+compiling main.c...
+main.c(77): warning:  #111-D: statement is unreachable
+  		s=2;
+main.c(15): warning:  #177-D: variable "k" was declared but never referenced
+  	int k=0;
+main.c(16): warning:  #177-D: variable "reclen" was declared but never referenced
+  	u8 reclen=0;//?莩ざ?
+main.c: 3 warnings, 0 errors
+compiling init.c...
+compiling user.c...
+compiling sensor.c...
+sensor.c(30): warning:  #223-D: function "USART2_SendString" declared implicitly
+  		USART2_SendString("left is %f\n",g_Left_Motor_Dead_Value);
+sensor.c: 1 warning, 0 errors
+compiling delay.c...
+compiling blt.c...
+blt.c(32): warning:  #177-D: variable "i" was declared but never referenced
+  	u8 res;	int i;    
+blt.c: 1 warning, 0 errors
+compiling timer.c...
+timer.c(114): warning:  #223-D: function "USART2_SendString" declared implicitly
+  		 USART2_SendString("a:%f\n",a);
+timer.c: 1 warning, 0 errors
+compiling usart1.c...
+compiling pwm.c...
+compiling spi.c...
+compiling showwave.c...
+assembling startup_stm32f10x_hd.s...
+compiling sys.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_spi.c...
+compiling misc.c...
+compiling core_cm3.c...
+compiling system_stm32f10x.c...
+linking...
+Program Size: Code=20832 RO-data=336 RW-data=304 ZI-data=1464  
+FromELF: creating hex file...
+"..\Output\systick.axf" - 0 Error(s), 6 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM::CMSIS:CORE:4.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.3.0
+
+<h2>Collection of Component include folders:</h2>
+  D:\开发\MPU6050(硬件IIC)\USER\RTE
+  d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+Build Time Elapsed:  00:00:09
+</pre>
+</body>
+</html>
